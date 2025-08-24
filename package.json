@@ -1,0 +1,36 @@
+{
+  "name": "vite-plugin-sops-env",
+  "version": "0.1.0",
+  "description": "A Vite plugin that loads and decrypts .env.enc using SOPS, merging with Vite's environment variables securely.",
+  "keywords": [
+    "vite",
+    "plugin",
+    "sops",
+    "env",
+    "encryption",
+    "vite-plugin"
+  ],
+  "homepage": "https://github.com/leonardbiofi/vite-plugin-sops-env#readme",
+  "bugs": {
+    "url": "https://github.com/leonardbiofi/vite-plugin-sops-env/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardbiofi/vite-plugin-sops-env.git"
+  },
+  "license": "MIT",
+  "author": "Leonard Gable",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vite": "*"
+  },
+  "peerDependencies": {
+    "vite": "^7.1.3"
+  }
+}
