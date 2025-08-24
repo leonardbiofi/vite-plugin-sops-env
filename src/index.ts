@@ -1,7 +1,7 @@
 import { Plugin, loadEnv } from "vite";
 import { execSync } from "child_process";
 import fs from "fs";
-import { parse } from "./utils";
+import { parse } from "./utils.js";
 
 export interface SopsEnvPluginOptions {
   path?: string;
@@ -52,19 +52,19 @@ export default function sopsEnvPlugin(options?: SopsEnvPluginOptions): Plugin {
         },
       };
     },
-    configureServer(server) {
-      const envPathToWatch = envPath;
+    // configureServer(server) {
+    //   const envPathToWatch = envPath;
 
-      server.watcher.add(envPathToWatch);
+    //   server.watcher.add(envPathToWatch);
 
-      server.watcher.on("change", (file) => {
-        if (file === envPathToWatch) {
-          console.log(
-            `🏸 [sops-env] ${file} changed. Restarting Vite server...`
-          );
-          server.restart();
-        }
-      });
-    },
+    //   server.watcher.on("change", (file) => {
+    //     if (file === envPathToWatch) {
+    //       console.log(
+    //         `🏸 [sops-env] ${file} changed. Restarting Vite server...`
+    //       );
+    //       server.restart();
+    //     }
+    //   });
+    // },
   };
 }
