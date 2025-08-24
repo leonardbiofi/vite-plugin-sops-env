@@ -4,7 +4,7 @@
 
 ## Features
 
-- Decrypts `.env.enc` on the fly
+- Decrypts `.env` on the fly
 - Merges with `.env` or `.env.local`
 - Injects `VITE_*` variables into `import.meta.env`
 - Secure (no decrypted file written)
