@@ -1,5 +1,6 @@
 # Vite Plugin SOPS Env
-A Vite plugin that loads and decrypts `.env` using SOPS
+
+🔐 A Vite plugin that loads and decrypts `.env.enc` using [SOPS](https://github.com/getsops/sops), and merges the variables with your existing `.env` — **without writing decrypted files to disk**.
 
 ## Features
 
@@ -12,4 +13,3 @@ A Vite plugin that loads and decrypts `.env` using SOPS
 
 ```bash
 npm install vite-plugin-sops-env --save-dev
-```
